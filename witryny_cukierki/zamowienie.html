@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabryka cukierków</title>
+    <link rel="stylesheet" href="styl10.css">
+    <script src="skrypt.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <!-- pierwszy blok górny -->
+        <section class="blok-gorny">
+            <a class="zamowienie" href="zamowienie.html">Zamów cukierki</a>
+        </section>
+
+        <!-- drugi blok górny -->
+        <section class="blok-gorny">
+            <a href="index.html">
+                <img src="grafika/logo.png" alt="Nasze logo" height="170">
+            </a>
+        </section>
+    </header>
+
+    <!-- baner -->
+    <section class="baner">
+        <h1>Strefa zamówień</h1>
+    </section>
+
+    <main>
+        <!-- blok główny lewy -->
+        <section class="blok-glowny">
+            <p>
+                <label for="ksztalt">Numer kształtu: </label><br>
+                <input type="number" id="ksztalt" name="ksztalt" value="1" min="1" step="1">
+            </p>
+
+            <p>skomponuj swój kolor, podaj RGB: </p>
+
+            <p>
+                <label for="r">R:</label>
+                <input type="number" id="r" name="r" value="255" min="0" max="255" step="1"><br>
+                <label for="g">G:</label>
+                <input type="number" id="g" name="g" value="0" min="0" max="255" step="1"><br>
+                <label for="b">B:</label>
+                <input type="number" id="b" name="b" value="0" min="0" max="255" step="1">
+            </p>
+
+            <button type="button" class="zamowienie" id="przycisk-zamowienie">Zamówienie</button>
+
+            <p id="twoje-zamowienie">Twoje zamówienie</p>
+
+            <button type="button" id="przycisk-kolor">Kolor</button>
+        </section>
+
+        <!-- blok główny prawy -->
+        <section class="blok-glowny">
+            <h2>Nasza oferta</h2>
+            <table>
+                <tr>
+                    <td>Kształty</td>
+                    <td rowspan="2">Możesz zamówić<br>dowolny kolor cukierka</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>cytryna</li>
+                            <li>liść</li>
+                            <li>banan</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <!-- stopka -->
+    <footer class="stopka">
+        <!-- PODMIENIĆ 00000000000 na własny numer PESEL -->
+        <p>Autor strony: <strong>00000000000</strong></p>
+    </footer>
+
+</body>
+</html>

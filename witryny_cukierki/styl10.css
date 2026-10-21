@@ -1,0 +1,98 @@
+/* =============================================================
+   Arkusz stylów witryny "Fabryka cukierków"  -  plik styl10.css
+   ============================================================= */
+
+/* wspólne dla całej strony: krój czcionki Helvetica */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ustawienie dwóch bloków obok siebie */
+header,
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* wspólne dla dwóch bloków górnych */
+.blok-gorny {
+    background-color: rgb(146, 184, 112);
+    text-align: center;
+    width: 50%;
+    height: 170px;
+}
+
+/* wspólne dla banera i stopki */
+.baner,
+.stopka {
+    background-color: rgb(100, 61, 49);
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding: 5px;
+}
+
+/* wspólne dla bloków głównych */
+.blok-glowny {
+    background-color: rgb(146, 184, 112);
+    width: 50%;
+    height: 450px;
+}
+
+/* odnośnik "Zamówienie" */
+.zamowienie {
+    background-image: url("grafika/cukierki1.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-right: 30px;
+    padding-bottom: 120px;
+    font-size: 150%;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* obraz logotypu w drugim bloku górnym */
+.blok-gorny img {
+    vertical-align: middle;
+}
+
+/* zdjęcie cukierków w lewym bloku głównym */
+.blok-glowny img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* tabela i komórki tabeli */
+table {
+    border: 2px dashed green;
+    margin: 30px;
+}
+
+td {
+    border: 2px dashed green;
+    padding: 20px;
+}
+
+/* nagłówek pierwszego stopnia */
+h1 {
+    letter-spacing: 20px;
+    font-size: 250%;
+}
+
+/* przyciski na stronie zamówienia */
+button {
+    font-family: Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+#przycisk-kolor {
+    font-size: 150%;
+    padding: 5px 20px;
+}
+
+#twoje-zamowienie {
+    padding: 10px;
+    border: 2px dashed green;
+}
