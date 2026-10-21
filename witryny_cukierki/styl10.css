@@ -41,6 +41,25 @@ main {
     height: 450px;
 }
 
+/* kolory odnośników (zgodne z makietą - obraz 2) */
+
+/* odnośniki ogólne - brązowy kolor banera i stopki,
+   dobrze czytelny na zielonym tle bloków */
+a {
+    color: rgb(100, 61, 49);
+}
+
+/* odnośnik już odwiedzony zachowuje ten sam kolor,
+   żeby nie zmieniać wyglądu po kliknięciu */
+a:visited {
+    color: rgb(100, 61, 49);
+}
+
+/* odnośnik w trakcie klikania - ciemniejszy brąz */
+a:active {
+    color: rgb(69, 42, 34);
+}
+
 /* odnośnik "Zamówienie" */
 .zamowienie {
     background-image: url("grafika/cukierki1.jpg");
@@ -50,7 +69,8 @@ main {
     padding-bottom: 120px;
     font-size: 150%;
     text-decoration: none;
-    color: inherit;
+    /* ciemny tekst na zdjęciu cukierki1.jpg */
+    color: rgb(60, 60, 60);
 }
 
 /* obraz logotypu w drugim bloku górnym */
