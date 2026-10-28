@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie tekstu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Prosta strona do formatowania tekstu</h1>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <label for="textInput">Wprowadź tekst:</label>
+            <input type="text" id="textInput" placeholder="Wpisz tekst tutaj">
+
+            <button id="applyBtn" class="call-btn">Wywołaj</button>
+        </section>
+
+        <section class="controls">
+            <div class="control-group">
+                <h3>Rozmiar tekstu</h3>
+                <input type="range" id="sizeSlider" min="10" max="50" value="16" step="1">
+                <span id="sizeValue">16px</span>
+            </div>
+
+            <div class="control-group">
+                <h3>Kolory</h3>
+                <button class="color-btn" data-color="black">Czarny</button>
+                <button class="color-btn" data-color="red">Czerwony</button>
+                <button class="color-btn" data-color="blue">Niebieski</button>
+                <button class="color-btn" data-color="green">Zielony</button>
+            </div>
+
+            <div class="control-group">
+                <h3>Styl tekstu</h3>
+                <div>
+                    <input type="checkbox" id="boldCheck"> <label for="boldCheck">Pogrubienie</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="italicCheck"> <label for="italicCheck">Kursywa</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="underlineCheck"> <label for="underlineCheck">Podkreślenie</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="strikeCheck"> <label for="strikeCheck">Przekreślenie</label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>Sprawdzenie checkboxa za pomocą przycisków (niezależnie)</h3>
+                <button id="checkBold">Zaznacz/Odznacz pogrubienie</button>
+                <button id="checkItalic">Zaznacz/Odznacz kursywę</button>
+                <button id="checkUnderline">Zaznacz/Odznacz podkreślenie</button>
+                <button id="checkStrike">Zaznacz/Odznacz przekreślenie</button>
+            </div>
+
+            <div class="control-group">
+                <h3>Opcje (radio) - kursywa lub przekreślenie/nadkreślenie</h3>
+                <div>
+                    <input type="radio" name="extraStyle" id="radioNone" value="none" checked>
+                    <label for="radioNone">Brak</label>
+                </div>
+                <div>
+                    <input type="radio" name="extraStyle" id="radioItalic" value="italic">
+                    <label for="radioItalic">Kursywa</label>
+                </div>
+                <div>
+                    <input type="radio" name="extraStyle" id="radioOverline" value="overline">
+                    <label for="radioOverline">Nadkreślenie</label>
+                </div>
+                <div>
+                    <input type="radio" name="extraStyle" id="radioLineThrough" value="line-through">
+                    <label for="radioLineThrough">Przekreślenie</label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>Odstępy header (spacing)</h3>
+                <button class="spacing-btn" data-spacing="10">10px</button>
+                <button class="spacing-btn" data-spacing="20">20px</button>
+                <button class="spacing-btn" data-spacing="30">30px</button>
+                <span id="spacingValue">Aktualne: domyślne</span>
+            </div>
+        </section>
+
+        <section class="output-section">
+            <h2>Wynik:</h2>
+            <p id="outputText" class="output-paragraph">Tutaj pojawi się sformatowany tekst...</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
