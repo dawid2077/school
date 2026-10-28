@@ -1,0 +1,1 @@
+zawsze robiac projekt jesli jest prosty dziel na style.css skrypt.js i index.html . nie uzywaj nic zbyt zaawansowanego nie rob wiecej niz trzeba, nie u zywaj zadnych komentarzy 
