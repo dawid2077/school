@@ -5,6 +5,8 @@ const outputText = document.getElementById('outputText');
 const sizeSlider = document.getElementById('sizeSlider');
 const sizeValue = document.getElementById('sizeValue');
 
+const fontSelect = document.getElementById('fontSelect');
+
 const colorBtns = document.querySelectorAll('.color-btn');
 
 const boldCheck = document.getElementById('boldCheck');
@@ -64,6 +66,7 @@ applyBtn.addEventListener('click', function() {
     outputText.textContent = text;
     
     outputText.style.fontSize = sizeSlider.value + 'px';
+    outputText.style.fontFamily = fontSelect.value;
     outputText.style.color = currentColor;
     outputText.style.fontWeight = 'normal';
     outputText.style.fontStyle = 'normal';

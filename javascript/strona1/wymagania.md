@@ -15,3 +15,5 @@ kursywa albo przekreslenie nadkreslenie
 
 header spacing  konkretne wartosci np 10 20 30
 przycisk wywolania
+
+dodaj liste rozwijalna z font family
