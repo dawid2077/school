@@ -12,5 +12,5 @@ function Konkatenacja() {
     const input1 = document.getElementById('input1');
     const input2 = document.getElementById('input2');
     const wynik = document.getElementById('wynik');
-    wynik.textContent = input1.value+input2.value;
+    wynik.textContent = input1.value.concat(input2.value);
 }
